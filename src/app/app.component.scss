@@ -1,0 +1,28 @@
+::ng-deep body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: black;
+}
+
+.banner span {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b {
+    background: linear-gradient(#72D9F8, #A88DF4);
+}
+
+.et {
+    background: linear-gradient(#8dc2f4, #d06cef);
+}
+
+.i {
+    background: linear-gradient(#A88DF4, #CB5AEE);
+}
+
+.t {
+    background: linear-gradient(#B27EF5, #DB46EE);
+}
