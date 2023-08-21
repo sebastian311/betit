@@ -1,0 +1,34 @@
+.banner span {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b {
+    background: linear-gradient(#72D9F8, #A88DF4);
+}
+
+.et {
+    background: linear-gradient(#8dc2f4, #d06cef);
+}
+
+.i {
+    background: linear-gradient(#A88DF4, #CB5AEE);
+}
+
+.t {
+    background: linear-gradient(#B27EF5, #DB46EE);
+}
+
+.searchBar {
+    padding-left: 20%;
+}
+
+#notifBell, #chatBell {
+    font-size: larger;
+}
+
+#profileAvatar {
+    font-size: 5vh;
+    color: teal;
+}
