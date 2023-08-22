@@ -1,0 +1,40 @@
+<mat-card class="matCard">
+    <div class="firstHalf">
+        <span class="profileCircle">
+            <i class='bx bx-user' id="profileAvatar"></i>
+        </span>
+        
+        <div class="custom-input">
+            <input type="text" placeholder="Enter something" />
+            <i class='bx bx-smile' id="smileyIco"></i>
+        </div>
+          
+    </div>
+    <div class="secondHalf">
+        <div class="left">
+            <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg transition duration-300 ease-in-out outline-none focus:outline-none">
+                <i class='bx bx-image'></i> Image
+            </button>
+            <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg transition duration-300 ease-in-out outline-none focus:outline-none">
+                <i class='bx bx-video'></i> Video
+            </button>
+            <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg transition duration-300 ease-in-out outline-none focus:outline-none">
+                <i class='bx bx-poll'></i> Poll
+            </button>        
+        </div>
+        <div class="right">
+            <button mat-button [matMenuTriggerFor]="menu" class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
+                <i class='bx bx-world'></i> Public
+            </button>
+
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
+                <i class='bx bx-world'></i> Public
+            </button>
+            <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
+                <i class='bx bxs-lock-alt'></i> Private
+            </button>
+            </mat-menu>              
+        </div>
+    </div>
+</mat-card>

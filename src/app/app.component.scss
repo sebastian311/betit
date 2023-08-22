@@ -6,6 +6,119 @@
     font-family: Roboto;
 }
 
-.footer {
-    bottom: 0;
+// ---------- Profile Card CSS -----------
+.profileCard {
+    margin-top: 7%;
+    border-radius: 7%;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer {
+    position: relative;
+    height: 30%;
+
+    .coverImage {
+        position: absolute;
+        height: 90%;
+        width: 90%;
+        bottom: 0 !important;
+        margin-left: 5%;
+        border-radius: 2vh !important;
+    }
+
+    .profileAvatar {
+        position: absolute;
+        bottom: -20px; /* Adjust this to control how much the avatar overlaps the image */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: teal;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid white;
+    }
+}
+
+.userCredentialSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+    .userMacro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+
+        .following, .posts, .followers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .wideButton {
+        width: 100%;
+        margin-top: 10%;
+        background-color: teal; /* Or any color you prefer */
+        color: white; /* Text color */
+        font-weight: bold; /* Make the text bold */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth color transition */
+      }
+      
+      .wideButton:hover {
+        background-color: darkcyan; /* Color on hover */
+      }
+    // .myProfileButton {
+    //     margin-top: 16%;
+    //     background-color: ;
+    // }
+}
+
+// ----------- YourShortcuts Card CSS ---------------
+
+.yourShortcuts {
+    margin-top: 7%;
+    border-radius: 7%;
+    height: 400px;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(99, 99, 99, 0.9) 0px 2px 8px 0px;
+
+    .shortcutsHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .shortcutsContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10%;
+
+        .shortcutsCombo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .shortcutsPic {
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            margin-right: 10%;
+            margin-top: 2%;
+        }
+    }
 }

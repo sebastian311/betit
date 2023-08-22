@@ -1,0 +1,55 @@
+[
+    {
+      "OP": "Lex Luthor",
+      "OP_ProfilePic": "../assets/lexLuthorProfilePic.jfif",
+      "timePosted": "10 minutes ago",
+      "title": "Exploring the Future of Technology",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia laboriosam quis laborum sunt autem iste animi quasi saepe earum.",
+      "likes": 128,
+      "comments": 34,
+      "shares": 56,
+      "image": "../assets/luthorImage1.avif",
+      "video": false,
+      "poll": false
+    },
+    {
+      "OP": "Clark Kent",
+      "OP_ProfilePic": "../assets/ClarkKentProfilePic.jfif",
+      "timePosted": "3 hours ago",
+      "title": "How to Stay Fit During Quarantine",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia laboriosam quis laborum sunt autem iste animi quasi saepe earum.",
+      "likes": 76,
+      "comments": 12,
+      "shares": 40,
+      "image": false,
+      "video": true,
+      "poll": false
+    },
+    {
+      "OP": "Tony Montana",
+      "OP_ProfilePic": "../assets/TonyMontanaProfilePIc.jfif",
+      "timePosted": "2 days ago",
+      "title": "The Best Coffee Places in Town",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia laboriosam quis laborum sunt autem iste animi quasi saepe earum.",
+      "likes": 150,
+      "comments": 45,
+      "shares": 100,
+      "image": "../assets/montanaImage1.avif",
+      "video": false,
+      "poll": false
+    },
+    {
+      "OP": "Peter Parker",
+      "OP_ProfilePic": "../assets/PeterParkerProfilePic.jfif",
+      "timePosted": "20 minutes ago",
+      "title": "Understanding Climate Change",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia laboriosam quis laborum sunt autem iste animi quasi saepe earum.",
+      "likes": 250,
+      "comments": 60,
+      "shares": 120,
+      "image": false,
+      "video": false,
+      "poll": false
+    }
+  ]
+  

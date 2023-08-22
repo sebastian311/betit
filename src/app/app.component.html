@@ -9,32 +9,164 @@
         Where Social Networking Meets Pop Culture Betting
     </section>    
 
-    <!-- Main content area, flexbox layout -->
+
     <div class="flex flex-row justify-between min-h-screen">
 
         <!-- Left SidebarComponent -->
-        <aside class="w-1/4 bg-white shadow-md">
-            <!-- <sidebar-component></sidebar-component> -->
+        <aside class="w-1/4 bg-smokewhite">
+            <mat-card class="profileCard">
+                <div class="imageContainer">
+                    <img src="../assets/cover.avif" class="coverImage">
+                    <div class="profileAvatar">
+                        <i class='bx bx-user' id="profileAvatar"></i>
+                    </div>
+                </div>
+                <mat-card-content>
+                    <section class="userCredentialSection">
+                        <span style="font-weight:900">Sebastian Nae</span>
+                        <span style="font-size: smaller; color: gray">@sebastianNaeDev_</span>
+
+                        <div class="userMacro">
+                            <div class="posts">
+                                <span style="font-weight:900">250</span>
+                                <span style="font-size: smaller; color: gray">Posts</span>
+                            </div>
+
+                            <div class="followers" style="margin-left: 20%">
+                                <span style="font-weight:900">2000+</span>
+                                <span style="font-size: smaller; color: gray">Followers</span>
+                            </div>
+
+                            <div class="following" style="margin-left: 20%;">
+                                <span style="font-weight:900">590</span>
+                                <span style="font-size: smaller; color: gray">Following</span>
+                            </div>
+                        </div>
+                            
+                        <!-- <button class="myProfileButton">My Profile</button> -->
+
+                        <mat-card-actions class="cardActions" style="width: 100%;">
+                            <button mat-raised-button class="wideButton">My profile</button>
+                        </mat-card-actions>
+                    </section>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="yourShortcuts">
+                <div class="shortcutsHeader" style="width: 100%">
+                    <span>Your shortcuts</span>
+                    <span style="color: gray; font-size: smaller">See all</span>
+                </div>
+                <div class="shortcutsContent">
+                    <div class="shortcutsCombo">
+                        <img src="../assets/artsSm.avif" class="shortcutsPic">
+                        <span> Art Course </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
+                        <span> All Crafts </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
+                        <span> PC World </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
+                        <span> Sports Center </span>
+
+                    </div>
+                </div>
+            </mat-card>
         </aside>
 
         <!-- Main content middle area -->
         <article class="w-1/2 p-4">
 
-            <!-- SearchComponent -->
-            <section>
-                <!-- <search-component></search-component> -->
-            </section>
+            <app-post-component></app-post-component>
+
+            <div class="flex items-center justify-between border-b py-2">
+                <div class="flex-1 border-t border-gray-400"></div>
+                <button mat-button [matMenuTriggerFor]="menu" class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
+                  <i *ngIf="!isMenuOpen" class='bx bx-chevron-down'></i>
+                  <i *ngIf="isMenuOpen" class='bx bx-chevron-up'></i> Recent
+                </button>
+            </div>
+ 
+            <mat-menu #menu="matMenu" (menuOpened)="isMenuOpen = true" (menuClosed)="isMenuOpen = false">
+                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">Recent</button>
+                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">Hot</button>
+            </mat-menu>
+              
 
             <!-- MainContentComponent goes here for displaying articles and such -->
             <section>
-                <!-- <main-content-component></main-content-component> -->
+                <app-article-generator></app-article-generator>
             </section>
 
         </article>
 
         <!-- Right SidebarComponent -->
-        <aside class="w-1/4 bg-white shadow-md">
-            <!-- <sidebar-component></sidebar-component> -->
+        <aside class="w-1/4 bg-smokewhite">
+            <mat-card class="yourShortcuts">
+                <div class="shortcutsHeader" style="width: 100%">
+                    <span>Activity</span>
+                    <span style="color: gray; font-size: smaller">See all</span>
+                </div>
+                <div class="shortcutsContent">
+                    <div class="shortcutsCombo">
+                        <img src="../assets/artsSm.avif" class="shortcutsPic">
+                        <span> Art Course </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
+                        <span> All Crafts </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
+                        <span> PC World </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
+                        <span> Sports Center </span>
+
+                    </div>
+                </div>
+            </mat-card>
+
+            <mat-card class="yourShortcuts">
+                <div class="shortcutsHeader" style="width: 100%">
+                    <span>Suggested for you</span>
+                    <span style="color: gray; font-size: smaller">See all</span>
+                </div>
+                <div class="shortcutsContent">
+                    <div class="shortcutsCombo">
+                        <img src="../assets/artsSm.avif" class="shortcutsPic">
+                        <span> Art Course </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
+                        <span> All Crafts </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
+                        <span> PC World </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
+                        <span> Sports Center </span>
+
+                    </div>
+                </div>
+            </mat-card>
         </aside>
 
     </div>

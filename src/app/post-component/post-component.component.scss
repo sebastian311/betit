@@ -1,0 +1,61 @@
+.matCard {
+    margin-top: 2%;
+    padding: 1%;
+    height: auto;
+    // box-shadow: rgba(126, 24, 111, 0.9) 0px 2px 8px 0px;
+
+    .firstHalf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profileCircle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 2%;
+        margin-top: 1%;
+        background-color: teal;
+    }
+
+    .custom-input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 5%;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden; 
+        background-color: white;
+      }
+      
+      .custom-input input {
+        flex-grow: 1;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px; 
+        outline: none;
+      }
+      
+      #smileyIco {
+        padding: 10px;
+        font-size: 20px;
+        color: #777;
+      }
+      
+    .secondHalf {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 2%;
+    }
+}
+  
