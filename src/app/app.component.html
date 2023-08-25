@@ -5,8 +5,8 @@
         <headercomponent></headercomponent>
     </header>
 
-    <section class="mt-6 w-full rounded text-center py-4 bg-gradient-to-r from-teal-500 to-green-400 text-white">
-        Where Social Networking Meets Pop Culture Betting
+    <section class="mt-6 w-full rounded text-center py-4 text-white sloganBg">
+        <strong>Wanna bet ?</strong>
     </section>    
 
 
@@ -14,68 +14,51 @@
 
         <!-- Left SidebarComponent -->
         <aside class="w-1/4 bg-smokewhite">
-            <mat-card class="profileCard">
-                <div class="imageContainer">
-                    <img src="../assets/cover.avif" class="coverImage">
-                    <div class="profileAvatar">
-                        <i class='bx bx-user' id="profileAvatar"></i>
+            
+            <mat-card class="yourShortcuts" style="position: sticky; top: 2%;">
+                <div class="shortcutsHeader" style="width: 100%">
+                    <span>Activity</span>
+                    <span style="color: gray; font-size: smaller">See all</span>
+                </div>
+                <div class="separator"></div>
+                <div class="shortcutsContent">
+                    <div class="shortcutsCombo">
+                        <img src="../assets/globalPolitics.avif" class="shortcutsPic">
+                        <span> Global Politics </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/elections.avif" class="shortcutsPic">
+                        <span> Elections </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/space.avif" class="shortcutsPic">
+                        <span> Space </span>
+
+                    </div>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/hollywood.avif" class="shortcutsPic">
+                        <span> Celebrities </span>
+
                     </div>
                 </div>
-                <mat-card-content>
-                    <section class="userCredentialSection">
-                        <span style="font-weight:900">Sebastian Nae</span>
-                        <span style="font-size: smaller; color: gray">@sebastianNaeDev_</span>
-
-                        <div class="userMacro">
-                            <div class="posts">
-                                <span style="font-weight:900">250</span>
-                                <span style="font-size: smaller; color: gray">Posts</span>
-                            </div>
-
-                            <div class="followers" style="margin-left: 20%">
-                                <span style="font-weight:900">2000+</span>
-                                <span style="font-size: smaller; color: gray">Followers</span>
-                            </div>
-
-                            <div class="following" style="margin-left: 20%;">
-                                <span style="font-weight:900">590</span>
-                                <span style="font-size: smaller; color: gray">Following</span>
-                            </div>
-                        </div>
-                            
-                        <!-- <button class="myProfileButton">My Profile</button> -->
-
-                        <mat-card-actions class="cardActions" style="width: 100%;">
-                            <button mat-raised-button class="wideButton">My profile</button>
-                        </mat-card-actions>
-                    </section>
-                </mat-card-content>
             </mat-card>
-
-            <mat-card class="yourShortcuts">
+            <mat-card class="yourShortcuts" style="position: sticky; top: 50%;">
                 <div class="shortcutsHeader" style="width: 100%">
                     <span>Your shortcuts</span>
                     <span style="color: gray; font-size: smaller">See all</span>
                 </div>
+                <div class="separator"></div>
                 <div class="shortcutsContent">
                     <div class="shortcutsCombo">
-                        <img src="../assets/artsSm.avif" class="shortcutsPic">
-                        <span> Art Course </span>
+                        <img src="../assets/activity1.avif" class="shortcutsPic">
+                        <span> <strong>Bet on Global Politics:</strong> User placed a bet on "Will Prigozhin make an appearance by Friday?" </span>
 
-                    </div>
+                    </div> <br/>
                     <div class="shortcutsCombo">
-                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
-                        <span> All Crafts </span>
-
-                    </div>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
-                        <span> PC World </span>
-
-                    </div>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
-                        <span> Sports Center </span>
+                        <img src="../assets/activity2.avif" class="shortcutsPic">
+                        <span> <strong>Viewed Elections Market:</strong> User viewed the market for the U.S. 2024 Republican presidential nomination. </span>
 
                     </div>
                 </div>
@@ -110,59 +93,69 @@
 
         <!-- Right SidebarComponent -->
         <aside class="w-1/4 bg-smokewhite">
-            <mat-card class="yourShortcuts">
-                <div class="shortcutsHeader" style="width: 100%">
-                    <span>Activity</span>
-                    <span style="color: gray; font-size: smaller">See all</span>
-                </div>
-                <div class="shortcutsContent">
-                    <div class="shortcutsCombo">
-                        <img src="../assets/artsSm.avif" class="shortcutsPic">
-                        <span> Art Course </span>
-
-                    </div>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
-                        <span> All Crafts </span>
-
-                    </div>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
-                        <span> PC World </span>
-
-                    </div>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
-                        <span> Sports Center </span>
-
+            <mat-card class="profileCard" style="position: sticky; top: 2%;">
+                <div class="imageContainer">
+                    <img src="../assets/cover.avif" class="coverImage">
+                    <div class="profileAvatar">
+                        <img src="../../assets/profile pic.jpeg" id="profileAvatar">
                     </div>
                 </div>
+                <mat-card-content>
+                    <section class="userCredentialSection">
+                        <span style="font-weight:900">Sebastian Nae</span>
+                        <span style="font-size: smaller; color: gray">@sebastianNaeDev_</span>
+
+                        <div class="userMacro">
+                            <div class="posts">
+                                <span style="font-weight:900">250</span>
+                                <span style="font-size: smaller; color: gray">Posts</span>
+                            </div>
+
+                            <div class="followers" style="margin-left: 20%">
+                                <span style="font-weight:900">2000+</span>
+                                <span style="font-size: smaller; color: gray">Followers</span>
+                            </div>
+
+                            <div class="following" style="margin-left: 20%;">
+                                <span style="font-weight:900">590</span>
+                                <span style="font-size: smaller; color: gray">Following</span>
+                            </div>
+                        </div>
+                            
+                        <!-- <button class="myProfileButton">My Profile</button> -->
+
+                        <mat-card-actions class="cardActions" style="width: 100%;">
+                            <button mat-raised-button class="wideButton">My profile</button>
+                        </mat-card-actions>
+                    </section>
+                </mat-card-content>
             </mat-card>
 
-            <mat-card class="yourShortcuts">
+            <mat-card class="yourShortcuts" style="position: sticky; top: 50%;">
                 <div class="shortcutsHeader" style="width: 100%">
                     <span>Suggested for you</span>
                     <span style="color: gray; font-size: smaller">See all</span>
                 </div>
+                <div class="separator"></div>
                 <div class="shortcutsContent">
                     <div class="shortcutsCombo">
-                        <img src="../assets/artsSm.avif" class="shortcutsPic">
-                        <span> Art Course </span>
+                        <img src="../assets/crpyto.avif" class="shortcutsPic">
+                        <span> Cryptocurrency </span>
 
                     </div>
                     <div class="shortcutsCombo">
-                        <img src="../assets/craftsSm.avif" class="shortcutsPic">
-                        <span> All Crafts </span>
+                        <img src="../assets/worldCelebrities.avif" class="shortcutsPic">
+                        <span> World Celebrities </span>
 
                     </div>
                     <div class="shortcutsCombo">
-                        <img src="../assets/hardwareSM.avif" class="shortcutsPic">
-                        <span> PC World </span>
+                        <img src="../assets/navalAcademy.avif" class="shortcutsPic">
+                        <span> Naval Academia </span>
 
                     </div>
                     <div class="shortcutsCombo">
-                        <img src="../assets/sportsSm.avif" class="shortcutsPic">
-                        <span> Sports Center </span>
+                        <img src="../assets/itTrends.avif" class="shortcutsPic">
+                        <span> IT Trends </span>
 
                     </div>
                 </div>

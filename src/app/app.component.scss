@@ -3,14 +3,41 @@
     padding: 2.5% !important;
     border: 0 !important;
     background-color: whitesmoke;
-    font-family: Roboto;
+    font-family: Optima;
+    // font-family: Roboto;
+    // font-family: sans-serif;
+}
+
+.sloganBg {
+    background: linear-gradient(to right, #8C91DD, #DB46EE);
+}
+
+
+#profileAvatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.separator::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.separator {
+    height: 1px;
+    background-color: silver;
+    margin: 10px 0;
 }
 
 // ---------- Profile Card CSS -----------
 .profileCard {
     margin-top: 7%;
     border-radius: 7%;
-    height: 400px;
+    height: 12%;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -68,15 +95,15 @@
     .wideButton {
         width: 100%;
         margin-top: 10%;
-        background-color: teal; /* Or any color you prefer */
-        color: white; /* Text color */
-        font-weight: bold; /* Make the text bold */
-        border-radius: 5px; /* Rounded corners */
-        transition: background-color 0.3s; /* Smooth color transition */
+        background: linear-gradient(to right, #8C91DD, #DB46EE); 
+        color: white; 
+        font-weight: bold; 
+        border-radius: 5px; 
+        transition: background-color 0.3s; 
       }
       
       .wideButton:hover {
-        background-color: darkcyan; /* Color on hover */
+        background-color: purple;
       }
     // .myProfileButton {
     //     margin-top: 16%;
@@ -89,7 +116,7 @@
 .yourShortcuts {
     margin-top: 7%;
     border-radius: 7%;
-    height: 400px;
+    height: 12%;
     padding: 25px;
     background-color: black;
     color: white;
@@ -105,7 +132,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 10%;
+        margin-top: 2%;
 
         .shortcutsCombo {
             display: flex;
@@ -115,10 +142,10 @@
         
         .shortcutsPic {
             border-radius: 50%;
-            height: 55px;
-            width: 55px;
+            height: 45px;
+            width: 45px;
             margin-right: 10%;
-            margin-top: 2%;
+            margin-top: 3%;
         }
     }
 }
