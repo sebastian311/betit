@@ -18,7 +18,7 @@
             </button>              
         </div>
     </div> <br/>
-    <h3><u>{{article.title}}</u></h3> <br/>
+    <h3 style="font-weight: 900;"><u>{{article.title}}</u></h3> <br/>
 
     <span> {{article.description}} </span> <br/>
 
@@ -26,8 +26,12 @@
       <img [src]="article.image" alt="Article Image">
     </div>
 
-    <div *ngIf="article.video">
+    <!-- <div *ngIf="article.video">
       <video src="video_path_here" controls></video>
+    </div> -->
+    
+    <div *ngIf="article.video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yqf8rAWDaK0" frameborder="0" allowfullscreen style="width: 100%"></iframe>
     </div>
     
     <p>Likes: {{article.likes}} | Comments: {{article.comments}} | Shares: {{article.shares}}</p>
