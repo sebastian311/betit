@@ -2,12 +2,23 @@
 
     <!-- HeaderComponent goes here, full width at the top -->
     <header>
-        <headercomponent></headercomponent>
+        <headercomponent (contactClicked)="handleButtonClick($event)" (homeClicked)="handleButtonClick($event)"></headercomponent>
     </header>
 
-    <section class="mt-6 w-full rounded text-center py-4 text-white sloganBg">
+    <!-- <section class="mt-6 w-full rounded text-center py-4 text-white sloganBg">
         <strong>Wanna bet ?</strong>
-    </section>    
+    </section>     -->
+
+    <!-- Remove tailwind class -->
+    <section>
+        <div class="menu-container mt-6 w-full rounded text-center py-4 text-white sloganBg">
+            <button class="menu-button active">Trending</button>
+            <button class="menu-button">New</button>
+            <button class="menu-button">Ending Soon</button>
+            <button class="menu-button">Volume</button>
+            <button class="menu-button">Liquidity</button>
+          </div>
+    </section>
 
 
     <div class="flex flex-row justify-between min-h-screen">
@@ -18,6 +29,24 @@
             <mat-card class="yourShortcuts" style="position: sticky; top: 2%;">
                 <div class="shortcutsHeader" style="width: 100%">
                     <span>Activity</span>
+                    <span style="color: gray; font-size: smaller">See all</span>
+                </div>
+                <div class="separator"></div>
+                <div class="shortcutsContent">
+                    <div class="shortcutsCombo">
+                        <img src="../assets/activity1.avif" class="shortcutsPic">
+                        <span> <strong>Bet on Global Politics:</strong> You've placed a bet on "Will Prigozhin make an appearance by Friday?" </span>
+
+                    </div> <br/>
+                    <div class="shortcutsCombo">
+                        <img src="../assets/activity2.avif" class="shortcutsPic">
+                        <span> <strong>Viewed Elections Market:</strong> You've viewed the market for the U.S. 2024 Republican presidential nomination. </span>
+                    </div>
+                </div>
+            </mat-card>
+            <mat-card class="yourShortcuts" style="position: sticky; top: 50%;">
+                <div class="shortcutsHeader" style="width: 100%">
+                    <span>Your shortcuts</span>
                     <span style="color: gray; font-size: smaller">See all</span>
                 </div>
                 <div class="separator"></div>
@@ -44,29 +73,10 @@
                     </div>
                 </div>
             </mat-card>
-            <mat-card class="yourShortcuts" style="position: sticky; top: 50%;">
-                <div class="shortcutsHeader" style="width: 100%">
-                    <span>Your shortcuts</span>
-                    <span style="color: gray; font-size: smaller">See all</span>
-                </div>
-                <div class="separator"></div>
-                <div class="shortcutsContent">
-                    <div class="shortcutsCombo">
-                        <img src="../assets/activity1.avif" class="shortcutsPic">
-                        <span> <strong>Bet on Global Politics:</strong> User placed a bet on "Will Prigozhin make an appearance by Friday?" </span>
-
-                    </div> <br/>
-                    <div class="shortcutsCombo">
-                        <img src="../assets/activity2.avif" class="shortcutsPic">
-                        <span> <strong>Viewed Elections Market:</strong> User viewed the market for the U.S. 2024 Republican presidential nomination. </span>
-
-                    </div>
-                </div>
-            </mat-card>
         </aside>
 
         <!-- Main content middle area -->
-        <article class="w-1/2 p-4">
+        <article class="w-1/2 p-4" *ngIf="!contactPage">
 
             <app-post-component></app-post-component>
 
@@ -89,6 +99,20 @@
                 <app-article-generator></app-article-generator>
             </section>
 
+        </article>
+
+        <!-- Main content middle area CONTACT -->
+        <article class="w-1/2 p-4" *ngIf="contactPage" style="margin-top: 1%;">
+            <mat-card class="matCardContact">
+                <div class="contact-header">
+                  <h2>Aaron W | Founder</h2>
+                </div>
+                <div class="contact-details">
+                  <p><strong>Email:</strong> <a href="mailto:aaron@rideapp.co">aaron@rideapp.co</a></p>
+                  <p><strong>Phone:</strong> +1 408 658 6180</p>
+                  <p><strong>LinkedIn:</strong> <a href="https://co.linkedin.com/in/aaronlalux" target="_blank">View Profile</a></p>
+                </div>
+              </mat-card>              
         </article>
 
         <!-- Right SidebarComponent -->
@@ -119,6 +143,11 @@
                             <div class="following" style="margin-left: 20%;">
                                 <span style="font-weight:900">590</span>
                                 <span style="font-size: smaller; color: gray">Following</span>
+                            </div>
+
+                            <div class="following" style="margin-left: 20%;">
+                                <span style="font-weight:900">2550</span>
+                                <span style="font-size: smaller; color: gray">Balance</span>
                             </div>
                         </div>
                             

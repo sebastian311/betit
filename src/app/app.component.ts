@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Betit';
-
   isMenuOpen: boolean = false;
+  contactPage: boolean = false;
+
+  handleButtonClick(event: any) {
+    this.contactPage = event;
+  }
 }

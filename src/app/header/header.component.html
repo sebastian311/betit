@@ -14,7 +14,7 @@
       </div>
       <!-- Buttons -->
       <div class="space-x-4">
-        <button class="text-black bg-purple-200 hover:bg-purple-100 px-3 py-2 rounded-lg">
+        <button class="text-black bg-purple-200 hover:bg-purple-100 px-3 py-2 rounded-lg" (click)="homeEmitEvent()">
             <i class='bx bx-home'></i> Betit
         </button>
         <button class="text-white"><i class='bx bxs-bell' id="notifBell"></i></button>
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Center section (Logo) -->
-    <div class="flex items-center space-x-2 centerSection">
+    <div class="flex items-center space-x-2 centerSection" style="height: 3.5vw">
       <div class="banner">
           <span class="b">B</span>
           <span class="et">E</span>
@@ -32,10 +32,15 @@
           <span class="i">I</span>
           <span class="t">T</span>
       </div>
+      <div class="slogan absolute bottom-0 left-0 right-0 text-center">
+        Wanna bet?
+      </div>
     </div>
 
     <!-- Right section (Account) -->
     <div class="flex items-center space-x-2 rightSection">
+
+      <span class="contactUs" (click)="contactEmitEvent()">Contact</span>
 
       <button class="live-button">
         <span class="live-dot"></span>

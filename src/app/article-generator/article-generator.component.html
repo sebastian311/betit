@@ -1,5 +1,6 @@
 <mat-card *ngFor="let article of articles" class="article">
-    <div class="row">
+  
+  <div class="row">
         <div class="left">
             <img [src]="article.OP_ProfilePic" class="opProfilePic">
             <div class="nameTime">
@@ -31,7 +32,8 @@
     
     <p>Likes: {{article.likes}} | Comments: {{article.comments}} | Shares: {{article.shares}}</p>
 
-    <div class="button-section">
+    <!-- Option A - Buttons, then B.M. underneath -->
+    <!-- <div class="button-section">
       <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
           <i class='bx bxs-like'></i> Like
       </button>
@@ -44,6 +46,45 @@
       <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">
         <i class='bx bxs-donate-heart'></i> Offer
       </button>
+    </div>
+
+    <hr> -->
+
+    <!-- Liquidity and Binary Marketing Boxes -->
+    <!-- <div class="flex justify-between items-center financial-info">
+        <div class="liquidity-box">
+            Liquidity: <span class="liquidity-value">1000</span> <i class='bx bx-coin'></i>
+        </div>
+        <div class="binary-boxes">
+            X: <span class="binary-value">0.40</span> <i class='bx bx-coin'></i>
+            Y: <span class="binary-value">0.60</span> <i class='bx bx-coin'></i>
+        </div>
+    </div> -->
+
+    <!-- Option B - Buttons and B.M. on the same line -->
+    <div class="button-section" style="display: flex">
+      <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" style="flex-grow: 1;">
+          <i class='bx bxs-like'></i> Like
+      </button>
+      <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" style="flex-grow: 1;">
+          <i class='bx bxs-comment'></i> Comment
+      </button>
+      <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" style="flex-grow: 1;">
+          <i class='bx bxs-share'></i> Share
+      </button>
+      <button class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" style="flex-grow: 1;">
+        <i class='bx bxs-donate-heart'></i> Offer
+      </button>
+
+        <div class="liquidity-box-alt" style="margin-left: 2%; flex-grow: 1;">
+            Liquidity: <br/> <span class="liquidity-value">1000</span> <i class='bx bx-coin'></i>
+        </div>
+        <div class="binary-boxes-alt" style="flex-grow: 1;">
+            <span>Yes:</span> <span class="binary-value" style="color: green; display: flex; align-items: center;">40 <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
+        </div>
+        <div class="binary-boxes-alt" style="flex-grow: 1;">
+            <span>No:</span> <span class="binary-value" style="color: red;display: flex; align-items: center;">60 <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
+        </div>
     </div>
     <hr>
 </mat-card>

@@ -8,6 +8,40 @@
     // font-family: sans-serif;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--colors-shadeMediumTransparent, #f2f2f2); /* Fallback color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.menu-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    color: white; // white vs black
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    z-index: 1;
+}
+  
+.menu-button.active,
+.menu-button:hover {
+    background-color: #E9D5FF; //#E9D5FF vs silver
+    color: black; // black vs white
+    border-radius: 5px;
+}
+  
+  /* Custom variables */
+// :root {
+//     --colors-shadeMediumTransparent: #f2f2f2;
+//     --colors-shadeBlack: white; // white vs black
+// }
+  
+/////////////////////////////////////////////////////////////////////
+
 .sloganBg {
     background: linear-gradient(to right, #8C91DD, #DB46EE);
 }
@@ -37,7 +71,7 @@
 .profileCard {
     margin-top: 7%;
     border-radius: 7%;
-    height: 12%;
+    height: 330px;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -116,7 +150,7 @@
 .yourShortcuts {
     margin-top: 7%;
     border-radius: 7%;
-    height: 12%;
+    height: 330px;
     padding: 25px;
     background-color: black;
     color: white;
@@ -149,3 +183,26 @@
         }
     }
 }
+
+.matCardContact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+  
+.contact-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.contact-details {
+    font-size: 18px;
+}
+  
+.contact-details a {
+    color: #BD63E8;
+    text-decoration: none;
+}
+  
