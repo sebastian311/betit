@@ -12,14 +12,14 @@
     <!-- Remove tailwind class -->
     <section>
         <div class="menu-container mt-6 w-full rounded text-center py-4 text-white sloganBg">
-            <button class="menu-button active">Trending</button>
-            <button class="menu-button">New</button>
-            <button class="menu-button">Ending Soon</button>
-            <button class="menu-button">Volume</button>
-            <button class="menu-button">Liquidity</button>
-          </div>
+          <button class="menu-button" [class.active]="activeButton === 'Trending'" (click)="setActive('Trending')">Trending</button>
+          <button class="menu-button" [class.active]="activeButton === 'New'" (click)="setActive('New')">New</button>
+          <button class="menu-button" [class.active]="activeButton === 'Ending Soon'" (click)="setActive('Ending Soon')">Ending Soon</button>
+          <button class="menu-button" [class.active]="activeButton === 'Volume'" (click)="setActive('Volume')">Volume</button>
+          <button class="menu-button" [class.active]="activeButton === 'Liquidity'" (click)="setActive('Liquidity')">Liquidity</button>
+        </div>
     </section>
-
+      
 
     <div class="flex flex-row justify-between min-h-screen">
 
@@ -89,8 +89,8 @@
             </div>
  
             <mat-menu #menu="matMenu" (menuOpened)="isMenuOpen = true" (menuClosed)="isMenuOpen = false">
-                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">Recent</button>
-                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg">Hot</button>
+                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" id="hoverMe">Recent</button>
+                <button mat-menu-item class="text-black hover:bg-purple-100 px-3 py-2 rounded-lg" id="hoverMe">Hot</button>
             </mat-menu>
               
 

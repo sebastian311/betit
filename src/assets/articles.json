@@ -8,6 +8,9 @@
       "likes": 128,
       "comments": 34,
       "shares": 56,
+      "liquidity": 20143,
+      "yes": 56,
+      "no": 44,
       "image": "../assets/whiteHouse.jpg",
       "video": false,
       "poll": false
@@ -21,6 +24,9 @@
       "likes": 76,
       "comments": 12,
       "shares": 40,
+      "liquidity": 1101,
+      "yes": 50,
+      "no": 50,
       "image": "../assets/missMeYetTrump.jpg",
       "video": false,
       "poll": false
@@ -34,6 +40,9 @@
       "likes": 150,
       "comments": 45,
       "shares": 100,
+      "liquidity": 570,
+      "yes": 20,
+      "no": 80,
       "image": false,
       "video": true,
       "poll": false
@@ -47,6 +56,9 @@
       "likes": 250,
       "comments": 60,
       "shares": 120,
+      "liquidity": 64010,
+      "yes": 35,
+      "no": 65,
       "image": false,
       "video": false,
       "poll": false

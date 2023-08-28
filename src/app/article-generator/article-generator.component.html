@@ -77,13 +77,13 @@
       </button>
 
         <div class="liquidity-box-alt" style="margin-left: 2%; flex-grow: 1;">
-            Liquidity: <br/> <span class="liquidity-value">1000</span> <i class='bx bx-coin'></i>
+            Liquidity: <br/> <span class="liquidity-value">{{article.liquidity | currency:'USD': 'symbol' : '1.0-0'}}</span>
         </div>
         <div class="binary-boxes-alt" style="flex-grow: 1;">
-            <span>Yes:</span> <span class="binary-value" style="color: green; display: flex; align-items: center;">40 <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
+            <span>Yes:</span> <span class="binary-value" style="color: green; display: flex; align-items: center;">{{article.yes}} <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
         </div>
         <div class="binary-boxes-alt" style="flex-grow: 1;">
-            <span>No:</span> <span class="binary-value" style="color: red;display: flex; align-items: center;">60 <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
+            <span>No:</span> <span class="binary-value" style="color: red;display: flex; align-items: center;">{{article.no}} <img src="../../assets/Betcoin.png" alt="Betcoins" style="width: 10px;"></span>
         </div>
     </div>
     <hr>
