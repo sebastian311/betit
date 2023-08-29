@@ -236,4 +236,16 @@
         width: 200%;
     }
 }
+
+@media (max-width: 550px) {
+    .menu-container {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    
+    .menu-button {
+      padding: 8px 16px; /* Adjust padding */
+      font-size: 12px; /* Reduce font size */
+    }
+}
   
