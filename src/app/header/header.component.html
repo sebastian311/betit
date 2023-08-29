@@ -1,22 +1,29 @@
 <div class="bg-gradient-to-r from-black to-gray-600 text-white p-4 flex-none rounded">
   <!-- Main container -->
-  <div class="container mx-auto flex items-center justify-between text-black mainContent">
+  <div class="mx-0 above-1279:mx-auto flex items-center justify-between text-black mainContent">
 
     <!-- Left section -->
     <div class="flex items-center space-x-4 leftSection">
-      <img src="../../assets/Betcoin.png" style="width: 3vh; cursor: pointer;" (click)="homeEmitEvent()">
+      <!-- Burger Menu -->
+      <div class="burger-menu">
+        <i class='bx bx-menu' style="color: #02BCEB"></i>
+      </div>
+
+      <img src="../../assets/Betcoin.png" style="width: 3vh; cursor: pointer;" class="betCoinRes" (click)="homeEmitEvent()">
       <!-- Searchbar -->
-      <div class="relative w-1/3">
+      <div class="relative w-1/3 searchBarRes">
         <input type="text" placeholder="Search..." class="w-full py-2 px-3 rounded-lg border border-gray-300 focus:border-purple-400 focus:outline-none text-black searchBar">
         <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             <i class='bx bx-search-alt-2'></i>
         </span>
       </div>
       <!-- Buttons -->
-      <div class="space-x-4">
+      <div class="space-x-4 buttonsRes">
         <button class="text-black bg-purple-200 hover:bg-purple-100 px-3 py-2 rounded-lg" (click)="homeEmitEvent()">
-            <i class='bx bx-home'></i> Betit
+          <i class='bx bx-home'></i> 
+          <span class="betit-text">Betit</span>
         </button>
+        
         <button class="text-white"><i class='bx bxs-bell' id="notifBell"></i></button>
         <button class="text-white"><i class='bx bx-message-square-dots' id="chatCloud"></i></button>
         <button class="text-white"><i class='bx bx-coin'></i></button>
@@ -32,7 +39,7 @@
           <span class="i">I</span>
           <span class="t">T</span>
       </div>
-      <div class="slogan absolute bottom-0 left-0 right-0 text-center" style="cursor: pointer; margin-right: 1%;">
+      <div class="slogan absolute bottom-0 left-0 right-0 text-center wannaBetSlogan" style="cursor: pointer; margin-right: 1%;">
         Wanna bet?
       </div>
     </div>

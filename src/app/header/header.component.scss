@@ -164,4 +164,65 @@
       box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
 }
+
+// Media Queries: //
+
+.betit-text {
+    display: inline;
+  }
+  
+/* Show when screen width is greater than 1134px */
+@media (max-width: 1200px) {
+    .betit-text {
+        display: none;
+    }
+    .banner {
+        height: 50px;
+    }
+}
+
+/* Burger menu hidden by default */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hide specified elements and show burger menu when screen width is less than or equal to 1021px */
+@media (max-width: 1073px) {
+  .buttonsRes, .searchBarRes, .betCoinRes {
+    display: none;
+  }
+  .burger-menu {
+    display: inline-block;
+  }
+}
+
+/* Mobile fine tuning */
+@media (max-width: 850px) {
+    .banner {
+        height: 70px;
+    }
+
+    .centerSection {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 580px) {
+    .contactUs {
+        display: none;
+    }
+
+    .wannaBetSlogan {
+        display: none;
+    }
+
+    .centerSection {
+        margin-top: 7%;
+    }
+}
+
+
+  
+  
   

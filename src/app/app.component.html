@@ -12,9 +12,9 @@
     <!-- Remove tailwind class -->
     <section>
         <div class="menu-container mt-6 w-full rounded text-center py-4 text-white sloganBg">
-          <button class="menu-button" [class.active]="activeButton === 'Trending'" (click)="setActive('Trending')">Trending</button>
-          <button class="menu-button" [class.active]="activeButton === 'New'" (click)="setActive('New')">New</button>
           <button class="menu-button" [class.active]="activeButton === 'Ending Soon'" (click)="setActive('Ending Soon')">Ending Soon</button>
+          <button class="menu-button" [class.active]="activeButton === 'New'" (click)="setActive('New')">New</button>
+          <button class="menu-button" [class.active]="activeButton === 'Trending'" (click)="setActive('Trending')">Trending</button>
           <button class="menu-button" [class.active]="activeButton === 'Volume'" (click)="setActive('Volume')">Volume</button>
           <button class="menu-button" [class.active]="activeButton === 'Liquidity'" (click)="setActive('Liquidity')">Liquidity</button>
         </div>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="shortcutsCombo">
                         <img src="../assets/space.avif" class="shortcutsPic">
-                        <span> Space </span>
+                        <span> Sports </span>
 
                     </div>
                     <div class="shortcutsCombo">
@@ -76,7 +76,7 @@
         </aside>
 
         <!-- Main content middle area -->
-        <article class="w-1/2 p-4" *ngIf="!contactPage">
+        <article class="w-1/2 p-4 articleContent" *ngIf="!contactPage">
 
             <app-post-component></app-post-component>
 

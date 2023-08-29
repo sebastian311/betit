@@ -68,3 +68,11 @@ img, video {
     justify-content: center;
     align-items: center;
 }
+
+/// Media Queries: ///
+
+@media (max-width: 690px) {
+    .binary-boxes-alt {
+        display: none;
+    }
+}

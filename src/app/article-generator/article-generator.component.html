@@ -18,7 +18,7 @@
             </button>              
         </div>
     </div> <br/>
-    <h3 style="font-weight: 900;"><u>{{article.title}}</u></h3> <br/>
+    <h3 style="font-weight: 900;"><u>{{article.title}} <span *ngIf="article.verified" style="position: absolute; margin-top: -10px;"><i class='bx bx-check-circle' style="color:#00B8EA;"></i></span></u></h3> <br/>
 
     <span> {{article.description}} </span> <br/>
 

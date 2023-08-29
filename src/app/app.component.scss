@@ -71,9 +71,10 @@
 .profileCard {
     margin-top: 7%;
     border-radius: 7%;
-    height: 330px;
+    height: 20.625rem; //330px
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 0.8vw;
 }
 
 .imageContainer {
@@ -150,7 +151,7 @@
 .yourShortcuts {
     margin-top: 7%;
     border-radius: 7%;
-    height: 330px;
+    height: 20.625rem; //330px
     padding: 25px;
     background-color: black;
     color: white;
@@ -204,5 +205,36 @@
 .contact-details a {
     color: #BD63E8;
     text-decoration: none;
+}
+  
+
+// Media Queries
+
+/* When mobile view*/
+
+// @media (max-width: 1024px) {
+//     .articleContent {
+//       width: 200%;
+//     }
+// }
+
+/* When height is less than 650px OR tablet view*/
+@media (max-height: 700px) {
+    .profileCard, .yourShortcuts {
+      height: 300px;
+    }
+    .profileCard, .yourShortcuts:nth-child(2n) {
+      margin-top: 20px;
+    }
+}
+
+@media (max-width: 1366px), (max-height: 620px) {
+    .profileCard, .yourShortcuts {
+        display: none;
+    }
+
+    .articleContent {
+        width: 200%;
+    }
 }
   
