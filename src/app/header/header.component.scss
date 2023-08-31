@@ -195,6 +195,13 @@
   .burger-menu {
     display: inline-block;
   }
+
+  .myBurgerMenu {
+    color: #02BCEB;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 5px;
+  }
 }
 
 /* Mobile fine tuning */
@@ -215,6 +222,15 @@
 
     .wannaBetSlogan {
         display: none;
+    }
+
+    .live-button {
+        display: none;
+    }
+    
+    .banner {
+        height: 60px;
+        margin-right: 20px;
     }
 
     .centerSection {
